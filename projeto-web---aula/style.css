@@ -1,0 +1,171 @@
+/* ======= GERAL ======= */
+
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'arial';
+}
+
+header {
+	background: #24388B;
+	padding: 10px 0;
+}
+
+.container {
+	margin: 0 150px;
+	display: flex;
+	justify-content: space-between;
+}
+
+/* ===== CABEÇALHO ===== */
+
+h1 {
+	margin: 0;
+	padding: 0;
+}
+
+ul.principal {
+	margin: 36px 0 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+li.emLinha {
+	display: inline;
+	padding: 0;
+	margin: 0 16px 0 0;
+}
+
+li.emLinha:last-child {
+	margin: 0;
+}
+
+li.emLinha a {
+	color: #fff;
+	text-decoration: none;
+	transition: color 0.3s;
+}
+
+li.emLinha a:hover {
+	color: cyan;
+	transition: color 0.3s;
+}
+
+li.emLinha a span {
+	color: cyan;
+	font-size: 14px;
+	display: inline-block;
+	transform: rotate(0deg);
+	transition: transform 0.5s;
+}
+
+li.emLinha:hover a span {
+	transform: rotate(180deg);
+}
+
+ul.oculto {
+	visibility: hidden;
+	background: #fff;
+	border: solid 1px #000;
+	border-radius: 5px;
+	list-style: none;
+	position: absolute;
+	padding: 5px 10px;
+	margin-left: 60px;
+	opacity: 0;
+	transform: translateY(-10px);
+	transition: opacity 0.2s, transform 0.3s;
+}
+
+li.emLinha:hover ul.oculto {
+	visibility: visible;
+	opacity: 1;
+	transform: translateY(0);
+
+}
+
+ul.oculto li {
+	padding: 5px 0;
+}
+
+ul.oculto li a {
+	color: #000;
+}
+
+/* ======= SEÇÃO 1 ======= */
+
+.blocoFigura{
+	width: 32%;
+	margin: 50px 0;	
+}
+
+.blocoFigura figure{
+	margin: 0;
+}
+
+.blocoFigura figure img{
+	max-width: 100%;
+}
+
+.blocoFigura h2{
+	margin: 5px  0 0 0;
+	text-align: center;
+}
+
+.blocoFigura a{
+	text-decoration: none;
+	color: #2593D1;
+	opacity: 1;
+	transition: opacity 0.2s;
+}
+
+.blocoFigura a:hover{
+	opacity: 0.7;
+	transition: opacity 0.2s;
+}
+
+/* ======= SEÇÃO 2 ======== */
+
+.margemSecao2{
+	margin: 20px 0;
+}
+
+.secao2h3{
+	margin: 0 auto;
+	font-size: 36px0;
+}
+
+/* ======= SEÇÃO 3 ======== */
+
+article{
+	width: 49%;
+}
+
+article p{
+	text-align: justify;
+}
+
+/* ======= RODAPÉ ======== */
+
+footer{
+	background: #24388B;
+	padding: 30px 0;
+	margin-top: 20px;
+}
+
+.divRodape{
+	width: 23%;
+	border: solid 1px red;
+}
+
+.divImagem{
+	text-align: center;
+}
+
+.divImagem img{
+	margin-bottom: 30px;
+}
+
+.divImagem img:last-child{
+	margin-bottom: 0;
+}
